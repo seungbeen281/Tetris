@@ -24,8 +24,11 @@ class App {
         this.ctx.font = '36px Arial';
         this.ctx.fillText('Tetris', this.canvas.width / 2, this.canvas.height / 2 - 20);
 
-        this.ctx.font = '16px Arial';
+        this.ctx.font = '18px Arial';
         this.ctx.fillText('게임을 시작하시려면 스페이스바를 눌러주세요.', this.canvas.width / 2, this.canvas.height / 2 + 20);
+
+        this.ctx.font = '16px Arial';
+        this.ctx.fillText('이동: 방향키 / rotate: ctrl / save: 위쪽 방향키', this.canvas.width / 2, this.canvas.height / 2 + 45);
 
         window.addEventListener('keydown', this.gameStart.bind(this));
     }

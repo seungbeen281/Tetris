@@ -141,6 +141,7 @@ export class Game {
 
                 break;
             case 17:
+            case 25:
                 // ctrl (rotate)
                 this.moveBlock.rotate();
 
